@@ -1,9 +1,9 @@
-def sum_two(a, b):
+def sum_two(array1, array2):
     """
-        sums two passed arguments
+        subracts array2 from array1
     """
     # your code here
-    return None
+    return []
 
 
 if __name__ == '__main__':
