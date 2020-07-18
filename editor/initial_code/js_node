@@ -1,14 +1,13 @@
 "use strict";
 
-function sumTwo(a, b) {
+function subtractArray(array1, array2) {
     // sums two passed arguments
 
     // your code here
-    return 0;
+    return [];
 }
 
 var assert = require('assert');
-if (!global.is_checking) {
     console.log('Example:');
     console.log(sumTwo(3, 2));
 
@@ -16,4 +15,3 @@ if (!global.is_checking) {
     assert.equal(sumTwo(3, 2), 5);
     assert.equal(sumTwo(5, 7), 12);
     console.log("Coding complete? Click 'Check' to earn cool rewards!");
-}
