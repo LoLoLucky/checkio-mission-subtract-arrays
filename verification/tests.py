@@ -11,26 +11,51 @@ Each test is a dict with
 TESTS = {
     "Basics": [
         {
-            "input": [3, 2],
-            "answer": 5,
-            "explanation": "3+2=?"
+            "input": [[0, 1, 2, 3, 4], [0, 2, 4]],
+            "answer": [1, 3],
+            "explanation": "[0, 1, 2, 3, 4]\n  ^     ^     ^"
         },
         {
-            "input": [5, 7],
-            "answer": 12,
-            "explanation": "5+7=?"
+            "input": [[1, 2, 1], [1]],
+            "answer": [1, 2],
+            "explanation": "[1, 2, 1]\n  ^  ^"
+        },
+        {
+            "input": [[0, [0, 1], 'hello'], [[0, 1], 'hello']],
+            "answer": [0],
+            "explanation": "[0, [0, 1], 'hello']\n     ^       ^"
+        },
+        {
+            "input": [[[0,0],[0,1],[1,0],[1,1]],[1,1]]
+            "answer": [[0,0],[0,1],[1,0]],
+            "explanation": "[0, [0, 1], 'hello']\n     ^       ^"
         }
     ],
     "Extra": [
         {
-            "input": [6, 3],
-            "answer": 9,
-            "explanation": "6+3=?"
+            "input": [[1,[],0],[1,0]],
+            "answer": [[]],
+            "explanation": "[1,[],0]\n  ^    ^"
         },
         {
-            "input": [6, 7],
-            "answer": 13,
-            "explanation": "6+7=?"
+            "input": [[[],0,[]],[[]]],
+            "answer": [[],0],
+            "explanation": "[[],0,[]]\n       ^"
+        },
+        {
+            "input": [['a','b','c','d'],['a','b']],
+            "answer": ['c','d'],
+            "explanation": "['a','b','c','d']\n  ^   ^"
+        },
+        {
+            "input": [[],[]],
+            "answer": [],
+            "explanation": "nothing added, nothing removed"
+        },
+        {
+            "input": [[0],[0]],
+            "answer": [],
+            "explanation": "[0]\n  ^"
         }
     ]
 }
