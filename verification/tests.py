@@ -21,7 +21,7 @@ TESTS = {
             "explanation": "[1, 2, 1]\n  ^  ^"
         },
         {
-            "input": [[0, 'hello'], [[0, 1], 'hello']],
+            "input": [[0, 'hello'], ['hello']],
             "answer": [0],
             "explanation": "[0, [0, 1], 'hello']\n     ^       ^"
         },
