@@ -21,27 +21,17 @@ TESTS = {
             "explanation": "[1, 2, 1]\n  ^  ^"
         },
         {
-            "input": [[0, [0, 1], 'hello'], [[0, 1], 'hello']],
+            "input": [[0, 'hello'], [[0, 1], 'hello']],
             "answer": [0],
             "explanation": "[0, [0, 1], 'hello']\n     ^       ^"
         },
         {
-            "input": [[[0,0],[0,1],[1,0],[1,1]],[1,1]]
+            "input": [['0,0','0,1','1,0','1,1'],['1,1']]
             "answer": [[0,0],[0,1],[1,0]],
             "explanation": "[0, [0, 1], 'hello']\n     ^       ^"
         }
     ],
     "Extra": [
-        {
-            "input": [[1,[],0],[1,0]],
-            "answer": [[]],
-            "explanation": "[1,[],0]\n  ^    ^"
-        },
-        {
-            "input": [[[],0,[]],[[]]],
-            "answer": [[],0],
-            "explanation": "[[],0,[]]\n       ^"
-        },
         {
             "input": [['a','b','c','d'],['a','b']],
             "answer": ['c','d'],
@@ -50,6 +40,11 @@ TESTS = {
         {
             "input": [[],[]],
             "answer": [],
+            "explanation": "nothing added, nothing removed"
+        },
+        {
+            "input": [[100],[]],
+            "answer": [100],
             "explanation": "nothing added, nothing removed"
         },
         {
