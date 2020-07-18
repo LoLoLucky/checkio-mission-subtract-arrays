@@ -10,6 +10,7 @@ function subtractArrays(array1, array2) {
 var assert = require('assert');
     console.log('Example:');
     console.log(subtractArrays([0, 1, 2, 3, 4], [0, 2, 4]));
+    
     // These "asserts" are used for self-checking and not for an auto-testing
     assert.deepEqual(subtractArrays([0, 1, 2, 3, 4], [0, 2, 4]), [1, 3]);
     assert.deepEqual(subtractArrays([1, 2, 1], [1]), [1, 2]);
