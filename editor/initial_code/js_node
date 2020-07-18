@@ -1,7 +1,7 @@
 "use strict";
 
 function subtractArray(array1, array2) {
-    // sums two passed arguments
+    //remove array2's elements from array1
 
     // your code here
     return [];
