@@ -1,4 +1,4 @@
-def sum_two(array1, array2):
+def subtract_arrays(array1, array2):
     """
         subracts array2 from array1
     """
