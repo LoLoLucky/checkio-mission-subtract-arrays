@@ -1,6 +1,6 @@
 "use strict";
 
-function subtractArray(array1, array2) {
+function subtractArrays(array1, array2) {
     //remove array2's elements from array1
 
     // your code here
