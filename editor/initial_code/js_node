@@ -9,9 +9,9 @@ function subtractArray(array1, array2) {
 
 var assert = require('assert');
     console.log('Example:');
-    console.log(sumTwo(3, 2));
-
+    console.log(subtractArrays([0, 1, 2, 3, 4], [0, 2, 4]), [1, 3]);
     // These "asserts" are used for self-checking and not for an auto-testing
-    assert.equal(sumTwo(3, 2), 5);
-    assert.equal(sumTwo(5, 7), 12);
-    console.log("Coding complete? Click 'Check' to earn cool rewards!");
+    assert.deapEqual(subtractArrays([0, 1, 2, 3, 4], [0, 2, 4]), [1, 3]);
+    assert.deapEqual(subtractArrays([1, 2, 1], [1]), [1, 2]);
+    assert.deapEqual(subtractArrays([0, [0, 1], "hello"], [[0, 1], "hello"]), [0]);
+    console.log("Coding complete? Click 'Check' to earn cool rewards!")
