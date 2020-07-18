@@ -8,9 +8,10 @@ def subtract_arrays(array1, array2):
 
 if __name__ == '__main__':
     print("Example:")
-    print(sum_two(3, 2))
+    print(subtract_arrays([0, 1, 2, 3, 4], [0, 2, 4]))
     
     # These "asserts" are used for self-checking and not for an auto-testing
-    assert sum_two(3, 2) == 5, "First"
-    assert sum_two(5, 7) == 12, "Second"
+    assert subtract_arrays([0, 1, 2, 3, 4], [0, 2, 4]) == [1, 3]
+    assert subtract_arrays([1, 2, 1], [1]) == [1, 2]
+    assert subtract_arrays([0, [0, 1], "hello"], [[0, 1], "hello"]) == [0]
     print("Coding complete? Click 'Check' to earn cool rewards!")
